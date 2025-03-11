@@ -30,5 +30,5 @@ rm -rf feeds/smpackage/luci-theme-design && git clone -b js --single-branch http
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 patch -p1 < "feeds/smpackage/.github/diy/patches/0004-luci-mod-status-firewall-disable-legacy-firewall-rul.patch"
 cp -f feeds/smpackage/.github/diy/banner package/base-files/files/etc/banner
-sed -i "s/%D %V, %C/openwrt $(date +'%m.%d') by kenzo/g" package/base-files/files/etc/banner
+sed -i "s/%D %V, %C/openwrt $(date +'%m.%d') by qqsq/g" package/base-files/files/etc/banner
 ./scripts/feeds update -a && ./scripts/feeds install -a
