@@ -20,7 +20,7 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 
-# Curstom
+# Custom
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 cp -f feeds/smpackage/.github/diy/default-settings package/emortal/default-settings/files/99-default-settings
