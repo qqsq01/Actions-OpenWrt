@@ -15,6 +15,11 @@ name: ImmortalWrt Builder
 on:
   repository_dispatch:
   workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'ssh'
+        required: false
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
